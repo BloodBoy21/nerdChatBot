@@ -14,7 +14,12 @@ describe('Load page', () => {
   it('Send message', () => {
     cy.get('input').type(clientMessage)
   })
-  it('Message sent', () => {
+  it('Message was sent', () => {
+    const message = 'Hello nerd bot'
+    cy.get('input').type(`${message}{enter}`)
+    cy.contains('span', message)
+  })
+  it('Bot answers', () => {
     const messageOld = 1
     const messageContainer = '[data-test-id="messages-container"]'
     cy.get(messageContainer).children().should('have.length', messageOld)
@@ -23,7 +28,7 @@ describe('Load page', () => {
       .children()
       .should('have.length', messageOld + 2)
   })
-  it('An empty message', () => {
+  it('Empty message is not sent', () => {
     const messageOld = 1
     const messageContainer = '[data-test-id="messages-container"]'
     cy.get(messageContainer).children().should('have.length', messageOld)

@@ -5,7 +5,7 @@ services:
     environment:
       PORT: 5100
     ports:
-      - 5100:5100
+      - 8080:8080
   nerdbot-backend:
     image: nerdbot-backend:latest
     ports:
