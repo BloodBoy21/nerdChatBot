@@ -41,8 +41,8 @@ Run docker compose
   docker-compose -f docker-compose.yml up
 ```
 URL's
-frontend - localhost:8080/
-backend - localhost:3000/
+frontend - localhost:8080
+backend - localhost:3000
 
 ## Test
 To run the unit tests 
