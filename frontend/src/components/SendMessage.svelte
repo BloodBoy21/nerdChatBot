@@ -23,7 +23,7 @@
   <input
     type="text"
     bind:value={textMessage}
-    placeholder="Writte a question"
+    placeholder="Type a message..."
     on:keydown={onInput}
     bind:this={inputField}
   />
@@ -35,7 +35,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #6d6875;
+    background-color: #bec1ce;
     padding: 0.5rem;
   }
   input {
@@ -50,7 +50,8 @@
   button {
     width: 100px;
     height: 30px;
-    background-color: #ccc;
+    background-color: #0558ef;
+    color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;

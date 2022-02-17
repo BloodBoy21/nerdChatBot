@@ -66,7 +66,7 @@
     margin-right: 10px;
   }
   .right-msg .msg-bubble {
-    background: #e0e0c8;
+    background: #f6eda3;
     border-bottom-right-radius: 0;
   }
 </style>

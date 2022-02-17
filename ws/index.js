@@ -11,16 +11,19 @@ class IoServer {
 
   init() {
     this.io.on('connection', (socket) => {
-      console.log('socket connected')
+      console.log(`New connection: ${socket.id}`)
       socket.on('disconnect', () => {
         console.log('socket disconnected')
       })
       socket.on('message', (message) => {
-        console.log('message received:', message)
         socket.emit('message', randomAnswer())
       })
     })
     return this
+  }
+
+  close() {
+    this.io.close()
   }
 }
 module.exports = { IoServer }

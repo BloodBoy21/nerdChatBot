@@ -5,8 +5,7 @@
   $storeFE = [{ name: 'Bot', text: 'Hello, how can I help you?', side: 'left' }]
 </script>
 
-<!-- TODO: fix height of chat -->
-<section class="msger-chat" bind:this={chat}>
+<section class="msger-chat" bind:this={chat} data-test-id="messages-container">
   {#each $storeFE as message}
     <svelte:component this={Message} {message} />
   {/each}
@@ -23,9 +22,9 @@
     width: 6px;
   }
   .msger-chat::-webkit-scrollbar-track {
-    background: #ddd;
+    background: #b4b3b3;
   }
   .msger-chat::-webkit-scrollbar-thumb {
-    background: #bdbdbd;
+    background: #969393;
   }
 </style>
