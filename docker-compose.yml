@@ -1,0 +1,12 @@
+version: '3'
+services:
+  nerdbot-frontend:
+    image: nerdbot-frontend:latest
+    environment:
+      PORT: 5100
+    ports:
+      - 5100:5100
+  nerdbot-backend:
+    image: nerdbot-backend:latest
+    ports:
+      - 3000:3000
