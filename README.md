@@ -41,6 +41,7 @@ Run docker compose
   docker-compose -f docker-compose.yml up
 ```
 URL's
+
 frontend - localhost:8080
 
 backend - localhost:3000
