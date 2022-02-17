@@ -11,10 +11,10 @@ describe('Test websocket api', () => {
     ioServer.init()
     socket = new IoClient('http://localhost:3000')
   })
-  afterAll(() => {
-    server.close()
-    ioServer.close()
-    socket.close()
+  afterAll(async () => {
+    await server.close()
+    await ioServer.close()
+    await socket.disconnect(0)
   })
   test('Test connection', () => {
     socket.on('connect', () => {
