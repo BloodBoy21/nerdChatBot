@@ -1,6 +1,8 @@
 {
   "name": "nerdchatbot",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "author": "Alan Balcazar",
+  "description": "A simple chatbot",
   "private": true,
   "prettier": "prettier-config-standard",
   "scripts": {
