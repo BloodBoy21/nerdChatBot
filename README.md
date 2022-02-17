@@ -14,12 +14,12 @@ Local installation
 ```bash
   cd ~/nerdChatBot
   npm install 
-  npm run
+  npm run start
 ```
 ```bash
   cd ~/nerdChatBot/frontend
   npm install
-  npm run
+  npm run start
 ```
 
 
