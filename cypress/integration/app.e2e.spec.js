@@ -1,6 +1,6 @@
 const urlPath = 'localhost:8080'
 const clientMessage = 'I need help to buy a new computer{enter}'
-describe('Load page', () => {
+describe('ChatBot', () => {
   beforeEach(() => {
     cy.visit(urlPath)
   })
