@@ -63,7 +63,10 @@
 
   .right-msg {
     flex-direction: row-reverse;
-    margin-right: 10px;
+  }
+  .left-msg .msg-bubble,
+  .right-msg .msg-bubble {
+    word-wrap: break-word;
   }
   .right-msg .msg-bubble {
     background: #f6eda3;
